@@ -1,0 +1,20 @@
+{
+  "name": "com.darkglasses.fsm",
+  "version": "1.0.0",
+  "displayName": "Finite State Machine",
+  "description": "Finite State Machine",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com:DarkGlasses13/FSM.git"
+  },
+  "licensesUrl": "https://github.com/DarkGlasses13/FSM/blob/main/LICENSE",
+  "dependencies": {},
+  "keywords": [
+    "finite state machine"
+  ],
+  "author": {
+    "name": "DarkGlasses",
+    "email": "13_dark_glasses_13@proton.me",
+    "url": "https://t.me/DarkGlasses13"
+  }
+}
