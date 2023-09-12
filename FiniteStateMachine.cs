@@ -3,7 +3,7 @@ using System.Linq;
 
 namespace Finite_State_Machine
 {
-    public abstract class FiniteStateMachine : IFiniteStateMachine
+    public class FiniteStateMachine : IFiniteStateMachine
     {
         private readonly List<IState> _states = new();
 
