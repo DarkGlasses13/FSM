@@ -27,9 +27,12 @@ namespace Finite_State_Machine
 
         public void Switch<TState>() where TState : IState
         {
-            CurrentState?.Exit();
-            CurrentState = _states.SingleOrDefault(state => state is TState);
-            CurrentState?.Enter();
+            IState previousState = CurrentState;
+            CurrentState = null;
+            previousState?.Exit();
+            IState nextState = _states.SingleOrDefault(state => state is TState);
+            nextState?.Enter();
+            CurrentState = nextState;
         }
 
         public void RemoveState(IState state) => _states.Remove(state);
