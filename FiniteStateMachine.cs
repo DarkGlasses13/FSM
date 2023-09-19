@@ -37,8 +37,6 @@ namespace Finite_State_Machine
 
         public void RemoveState(IState state) => _states.Remove(state);
 
-        public void RemoveStates(IEnumerable<IState> states) => _states.Remove(states);
-
         public void Clear()
         {
             CurrentState = null;
