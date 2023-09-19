@@ -10,6 +10,6 @@ namespace Finite_State_Machine
         void AddStates(IEnumerable<IState> states);
         void RemoveState(IState state); 
         void RemoveState(IState state);
-        void Clear()
+        void Clear();
     }
 }
